@@ -1,4 +1,7 @@
 export default {
+  alias: {
+    vue$: 'vue/dist/vue.runtime.esm.js',
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Nuxt Starter',
