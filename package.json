@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@tanstack/vue-query": "^5.0.0",
-    "abort-controller": "^3.0.0",
     "vue": "2.7.16",
     "vue-demi": "0.14.6"
   },

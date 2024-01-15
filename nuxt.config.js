@@ -2,6 +2,15 @@ export default {
   alias: {
     vue$: 'vue/dist/vue.runtime.esm.js',
   },
+  render: {
+    bundleRenderer: {
+      // AbortController support for development
+      // see more: 
+      //     1. https://github.com/nuxt/nuxt/issues/4914
+      //     2. https://github.com/nuxt/nuxt/issues/6480
+      runInNewContext: false,
+    },
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Nuxt Starter',
@@ -20,7 +29,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/abort-controller.js', '~/plugins/vue-query.js'],
+  plugins: ['~/plugins/vue-query.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
